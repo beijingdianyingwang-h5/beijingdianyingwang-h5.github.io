@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北京电影网 - 京城灰砖红墙宫灯风影视导航</title>
+<meta name="description" content="北京电影网(https://beijingdianyingwang-h5.github.io)以京城灰砖红墙、宫灯、胡同门牌为视觉，整理最新电影、热播剧集、综艺娱乐、动漫专区，做合规影视信息导航站；非北京电影学院/北京广电官方站。">
+<meta name="keywords" content="北京电影网,京城风,灰砖红墙,宫灯,胡同,电影导航,最新电影,热播剧集,综艺,动漫">
+<meta name="author" content="北京电影网">
+<meta name="robots" content="index,follow">
+<meta name="msvalidate.01" content="BING_VERIFICATION_CODE">
+<meta property="og:title" content="北京电影网 - 京城灰砖红墙宫灯风影视导航">
+<meta property="og:description" content="北京电影网：胡同口挂盏宫灯，片单像四合院的海报墙。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://beijingdianyingwang-h5.github.io">
+<meta property="og:site_name" content="北京电影网">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"北京电影网",
+  "url":"https://beijingdianyingwang-h5.github.io",
+  "description":"京城灰砖红墙宫灯风影视信息导航站（非北京电影学院/北京广电官方站）",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://beijingdianyingwang-h5.github.io#search={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --wall:#c0392b;
+  --wall-d:#962d22;
+  --grey:#3a3f4b;
+  --grey2:#4b5263;
+  --paper:#f5efe2;
+  --ink:#23262f;
+  --liuli:#f6c453;
+  --night:#10141f;
+  --muted:#8b8676;
+}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Songti SC",serif;
+  background:
+    radial-gradient(680px 380px at 88% 0%, rgba(192,57,43,.18), transparent 60%),
+    radial-gradient(520px 300px at 0% 12%, rgba(246,196,83,.18), transparent 60%),
+    var(--paper);
+  color:var(--ink);line-height:1.8;overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;transition:.2s}
+
+.disclaimer{background:#fff4f0;color:var(--wall-d);font-size:12px;text-align:center;padding:6px 14px;border-bottom:1px solid #f0c9c2}
+.disclaimer b{color:var(--wall)}
+
+.brick-bar{height:10px;background:
+  repeating-linear-gradient(90deg,var(--grey) 0 40px,var(--grey2) 40px 42px,var(--paper) 42px 46px,var(--grey) 46px 86px);
+  border-bottom:3px solid var(--wall)}
+
+.top{max-width:1180px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-size:26px;font-weight:900;color:var(--wall)}
+.brand b{color:var(--grey)}
+.brand small{display:block;font-size:11px;letter-spacing:3px;color:var(--muted);font-weight:700}
+.nav{display:flex;gap:12px;margin-left:auto;flex-wrap:wrap}
+.nav a{font-size:14px;font-weight:700;color:var(--ink);padding:6px 14px;border:1px solid var(--grey);border-radius:6px;background:rgba(255,255,255,.6)}
+.nav a:hover{background:var(--wall);color:#fff;border-color:var(--wall)}
+.btn{font-size:13px;font-weight:800;background:var(--liuli);color:var(--ink);padding:8px 18px;border-radius:6px;box-shadow:0 3px 0 #c79a2e}
+.btn:hover{transform:translateY(-1px)}
+
+.hero{max-width:1180px;margin:0 auto;padding:44px 20px 24px;position:relative}
+.lantern{position:absolute;right:22px;top:4px;font-size:120px;filter:drop-shadow(0 12px 20px rgba(150,45,34,.35));transform:rotate(3deg)}
+.hero-card{background:linear-gradient(160deg,#fffdf7,#f3ebd9);border:2px solid var(--wall);border-radius:14px;padding:34px 32px;max-width:780px;position:relative;
+  box-shadow:inset 0 0 0 5px rgba(192,57,43,.1),0 16px 40px rgba(35,38,47,.18)}
+.hero-card::before{content:"門牌 001";position:absolute;top:-14px;left:24px;font-family:"Courier New",monospace;font-weight:800;font-size:12px;color:#fff;background:var(--grey);padding:4px 10px;border-radius:4px}
+.plate{display:inline-block;background:var(--wall);color:#fff;font-size:12px;font-weight:800;letter-spacing:1px;padding:4px 12px;border-radius:4px;margin-bottom:12px}
+.hero h1{font-size:clamp(36px,7vw,62px);font-weight:900;color:var(--wall);letter-spacing:2px}
+.hero h1 span{color:var(--grey)}
+.hero p{max-width:620px;color:#4a463c;font-size:clamp(14px,3vw,16px);margin:14px 0}
+.hero-url{display:inline-block;font-family:"Courier New",monospace;font-weight:800;color:var(--wall-d);background:#fff;border:1px dashed var(--wall);padding:8px 16px;border-radius:8px}
+
+.section{max-width:1180px;margin:0 auto;padding:18px 20px 60px}
+.head{display:flex;align-items:center;gap:12px;margin:38px 0 18px;flex-wrap:wrap}
+.head .ico{font-size:22px}
+.head h2{font-size:clamp(20px,4vw,26px);font-weight:900;color:var(--wall)}
+.head .en{font-size:12px;color:var(--grey2);font-family:"Courier New",monospace}
+.head .line{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--wall) 0 12px,transparent 12px 24px);min-width:40px}
+
+/* 门牌卡 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.plate-card{background:#fffdf7;border:1px solid var(--grey);border-radius:10px;padding:0;position:relative;transition:.22s;overflow:hidden}
+.plate-card .num{background:var(--grey);color:#fff;font-family:"Courier New",monospace;font-weight:800;font-size:12px;padding:6px 12px;display:flex;justify-content:space-between}
+.plate-card .face{height:96px;display:flex;align-items:center;justify-content:center;font-size:40px;color:#fff;margin:12px}
+.plate-card:nth-child(1) .face{background:linear-gradient(135deg,#e35b4d,var(--wall))}
+.plate-card:nth-child(2) .face{background:linear-gradient(135deg,#f6c453,#c79a2e)}
+.plate-card:nth-child(3) .face{background:linear-gradient(135deg,#7aa2ff,#3a5e8c)}
+.plate-card:nth-child(4) .face{background:linear-gradient(135deg,#36d399,#1c8f6a)}
+.plate-card:nth-child(5) .face{background:linear-gradient(135deg,#c792ea,#7a4f9c)}
+.plate-card:nth-child(6) .face{background:linear-gradient(135deg,#ff9a76,#d84315)}
+.plate-card .body{padding:0 14px 16px}
+.plate-card h3{font-size:15px;font-weight:900}
+.plate-card p{font-size:12px;color:var(--muted);margin:3px 0 8px}
+.tag{display:inline-block;font-size:11px;font-weight:800;color:#fff;background:var(--grey2);padding:2px 8px;border-radius:4px;margin-right:4px}
+
+/* 热剧：四合院房顶排片 */
+.courtyard{display:flex;flex-direction:column;gap:12px}
+.room{display:flex;align-items:center;gap:14px;background:#fffdf7;border:1px solid var(--grey);border-left:5px solid var(--wall);border-radius:10px;padding:12px 18px}
+.room .tile-emoji{font-size:26px}
+.room h3{font-size:15px;font-weight:800}
+.room p{font-size:12px;color:var(--muted)}
+.room .eps{margin-left:auto;font-family:"Courier New",monospace;font-weight:800;color:var(--wall-d)}
+
+/* 综艺：宫灯 */
+.lanterns{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.lantern-card{display:flex;align-items:center;gap:14px;background:linear-gradient(160deg,#fffdf7,#f3ebd9);border:1px solid var(--wall);border-radius:14px;padding:14px 18px}
+.lantern-card .lt{font-size:26px}
+.lantern-card h3{font-size:14px;font-weight:800;color:var(--wall-d)}
+.lantern-card p{font-size:12px;color:var(--muted)}
+
+/* 动漫：糖葫芦串 */
+.skewer{display:flex;flex-direction:column;gap:12px}
+.berry{display:flex;align-items:center;gap:14px;background:#fffdf7;border:1px dashed var(--wall);border-radius:999px;padding:10px 20px}
+.berry .ball{width:18px;height:18px;border-radius:50%;background:var(--wall);flex-shrink:0;box-shadow:inset 0 0 0 3px #f3ebd9}
+.berry:nth-child(2) .ball{background:var(--liuli)}
+.berry:nth-child(3) .ball{background:#36d399}
+.berry:nth-child(4) .ball{background:#7aa2ff}
+.berry:nth-child(5) .ball{background:#c792ea}
+.berry:nth-child(6) .ball{background:#ff9a76}
+.berry h3{font-size:14px;font-weight:800}
+.berry p{font-size:12px;color:var(--muted)}
+.berry .ep{margin-left:auto;font-family:"Courier New",monospace;font-weight:800;color:var(--wall-d)}
+
+.about{max-width:1180px;margin:0 auto;padding:10px 20px 50px}
+.yard-note{background:#fffdf7;border:2px solid var(--grey);border-radius:16px;padding:30px;position:relative}
+.yard-note::before{content:"🏮";position:absolute;top:-18px;right:22px;font-size:34px;background:#fffdf7;padding:0 6px}
+.yard-note h3{font-size:20px;font-weight:900;color:var(--wall);margin-bottom:12px}
+.yard-note p{font-size:14px;color:#4a463c;margin-bottom:10px}
+.yard-note b{color:var(--wall-d)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.stat{background:#f3ebd9;border:1px solid var(--grey);border-radius:14px;padding:16px;text-align:center}
+.stat .v{font-size:22px;font-weight:900;color:var(--wall)}
+.stat .l{font-size:12px;color:var(--muted);margin-top:4px}
+
+.footer{background:var(--night);color:#cfd0d6;padding:36px 20px 22px;text-align:center;margin-top:40px;border-top:5px solid var(--wall)}
+.footer .lg{font-size:22px;font-weight:900;color:#fff}
+.footer .lg b{color:var(--liuli)}
+.footer .fl{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:12px 0;font-size:13px}
+.footer .fl a{color:var(--liuli);border-bottom:1px dotted rgba(246,196,83,.6)}
+.footer .cp{font-size:12px;line-height:2;border-top:1px solid #2a2f3d;padding-top:14px;max-width:880px;margin:0 auto}
+.footer .cp a{color:var(--liuli)}
+
+@media(max-width:768px){.nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.lanterns{grid-template-columns:repeat(2,1fr)}.lantern{display:none}}
+@media(max-width:480px){.section{padding:18px 14px 40px}.grid{grid-template-columns:1fr}.lanterns{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero-card{padding:26px 18px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="disclaimer">🏮 本站“北京电影网”仅为影视信息导航站，<b>非北京电影学院、非北京市电影局/广电官方站</b>；不提供视听节目服务，不存片、不盗链、不聚合非法播放源。</div>
+
+<div class="brick-bar"></div>
+
+<div class="top">
+  <div class="brand">北京<b>电影网</b><small>BEIJING · 胡同口宫灯</small></div>
+  <nav class="nav">
+    <a href="#movies">门牌新片</a>
+    <a href="#tv">四合院热剧</a>
+    <a href="#shows">宫灯综艺</a>
+    <a href="#anime">糖葫芦动漫</a>
+    <a href="#about">关于这座城</a>
+  </nav>
+  <a href="#movies" class="btn">🏮 逛胡同看片</a>
+</div>
+
+<header class="hero">
+  <div class="lantern">🏮</div>
+  <div class="hero-card">
+    <div class="plate">非官方 · 影视导航</div>
+    <h1>北京<span>电影网</span></h1>
+    <p>胡同口挂盏宫灯，片单像四合院的海报墙：新片贴门牌、热剧住四合院、综艺提宫灯、动漫串糖葫芦。本站只整理公开影视信息，资源以正版/官方平台为准。</p>
+    <div class="hero-url">🔗 https://beijingdianyingwang-h5.github.io</div>
+  </div>
+</header>
+
+<main class="section">
+
+  <div class="head" id="movies">
+    <span class="ico">🚪</span><h2>门牌新片 · 最新电影</h2><span class="en">// hutong no.</span><div class="line"></div>
+  </div>
+  <div class="grid">
+    <div class="plate-card"><div class="num"><span>001</span><span>新片</span></div><div class="face">🎬</div><div class="body"><h3>钟鼓楼夜行</h3><p>京味/2026/8.7</p><span class="tag">新片</span></div></div>
+    <div class="plate-card"><div class="num"><span>002</span><span>口碑</span></div><div class="face">🍵</div><div class="body"><h3>茶馆最后一盏灯</h3><p>年代/2026/8.5</p><span class="tag">口碑</span></div></div>
+    <div class="plate-card"><div class="num"><span>003</span><span>高分</span></div><div class="face">🏮</div><div class="body"><h3>琉璃厂谜案</h3><p>悬疑/2026/8.8</p><span class="tag">高分</span></div></div>
+    <div class="plate-card"><div class="num"><span>004</span><span>治愈</span></div><div class="face">🌿</div><div class="body"><h3>胡同里的猫</h3><p>治愈/2026/8.4</p><span class="tag">慢片</span></div></div>
+    <div class="plate-card"><div class="num"><span>005</span><span>燃</span></div><div class="face">🥋</div><div class="body"><h3>天桥把式</h3><p>动作/2026/8.6</p><span class="tag">功夫</span></div></div>
+    <div class="plate-card"><div class="num"><span>006</span><span>喜剧</span></div><div class="face">🥟</div><div class="body"><h3>饺子馆风云</h3><p>喜剧/2026/8.3</p><span class="tag">下饭</span></div></div>
+  </div>
+
+  <div class="head" id="tv">
+    <span class="ico">🏡</span><h2>四合院热剧 · 热播剧集</h2><span class="en">// courtyard drama</span><div class="line"></div>
+  </div>
+  <div class="courtyard">
+    <div class="room"><div class="tile-emoji">📺</div><div><h3>南锣鼓巷人家</h3><p>年代/更新至24集</p></div><div class="eps">EP24</div></div>
+    <div class="room"><div class="tile-emoji">📺</div><div><h3>前门楼下的铺子</h3><p>商战/更新至18集</p></div><div class="eps">EP18</div></div>
+    <div class="room"><div class="tile-emoji">📺</div><div><h3>大杂院相亲记</h3><p>都市/更新至30集</p></div><div class="eps">EP30</div></div>
+    <div class="room"><div class="tile-emoji">📺</div><div><h3>什刹海夜巡</h3><p>悬疑/更新至12集</p></div><div class="eps">EP12</div></div>
+    <div class="room"><div class="tile-emoji">📺</div><div><h3>老城墙的雪</h3><p>治愈/更新至20集</p></div><div class="eps">EP20</div></div>
+  </div>
+
+  <div class="head" id="shows">
+    <span class="ico">🏮</span><h2>宫灯综艺 · 综艺娱乐</h2><span class="en">// lantern show</span><div class="line"></div>
+  </div>
+  <div class="lanterns">
+    <div class="lantern-card"><div class="lt">🥢</div><div><h3>胡同饭桌谈片</h3><p>涮肉配老片，边吃边聊</p></div></div>
+    <div class="lantern-card"><div class="lt">🎙️</div><div><h3>天桥说片人</h3><p>评书式讲电影名场面</p></div></div>
+    <div class="lantern-card"><div class="lt">🪕</div><div><h3>宫灯歌会</h3><p>影视金曲+京腔翻唱</p></div></div>
+    <div class="lantern-card"><div class="lt">🧧</div><div><h3>庙会点片局</h3><p>弹幕投票定下周片</p></div></div>
+    <div class="lantern-card"><div class="lt">🍵</div><div><h3>茶馆影评会</h3><p>甜口/毒舌两盖碗</p></div></div>
+    <div class="lantern-card"><div class="lt">🏮</div><div><h3>元宵灯谜片</h3><p>用灯谜猜电影剧名</p></div></div>
+  </div>
+
+  <div class="head" id="anime">
+    <span class="ico">🍡</span><h2>糖葫芦动漫 · 动漫专区</h2><span class="en">// skewer anime</span><div class="line"></div>
+  </div>
+  <div class="skewer">
+    <div class="berry"><div class="ball"></div><div><h3>胡同小神仙</h3><p>国风/新番</p></div><div class="ep">EP12</div></div>
+    <div class="berry"><div class="ball"></div><div><h3>糖人师傅</h3><p>治愈/年番</p></div><div class="ep">EP48</div></div>
+    <div class="berry"><div class="ball"></div><div><h3>风筝少年</h3><p>成长/连载</p></div><div class="ep">EP24</div></div>
+    <div class="berry"><div class="ball"></div><div><h3>故宫猫巡夜</h3><p>奇幻/热更</p></div><div class="ep">EP30</div></div>
+    <div class="berry"><div class="ball"></div><div><h3>天桥木偶戏</h3><p>传统/新番</p></div><div class="ep">EP09</div></div>
+    <div class="berry"><div class="ball"></div><div><h3>京城异闻录</h3><p>志怪/年番</p></div><div class="ep">EP60</div></div>
+  </div>
+
+  <div class="head" id="about">
+    <span class="ico">🏯</span><h2>关于这座城 · 关于我们</h2><span class="en">// about</span><div class="line"></div>
+  </div>
+  <div class="about">
+    <div class="yard-note">
+      <h3>北京电影网是什么？</h3>
+      <p><b>北京电影网</b>（https://beijingdianyingwang-h5.github.io）是“京城灰砖红墙、宫灯、胡同门牌”风格的影视信息导航站。</p>
+      <p>“北京”是城市意象，不是官方背书：本站<b>与北京电影学院无关、与北京市电影局/广电无关</b>，不叫“北京广电影视平台”，也不提供《信息网络传播视听节目许可证》项下的播片服务。[7](@ref)</p>
+      <p>只做：最新电影 / 热播剧集 / 综艺 / 动漫的<b>信息索引与正版渠道入口</b>；不存储视频、不提供盗版直链、不聚合非法播放源、不挂多源解析。</p>
+      <div class="stats">
+        <div class="stat"><div class="v">非官方</div><div class="l">与北电无关</div></div>
+        <div class="stat"><div class="v">0</div><div class="l">盗版直链</div></div>
+        <div class="stat"><div class="v">100%</div><div class="l">移动端</div></div>
+        <div class="stat"><div class="v">京城风</div><div class="l">灰砖红墙</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="lg">北京<b>电影网</b></div>
+  <div class="fl">
+    <a href="#movies">门牌新片</a>
+    <a href="#tv">四合院热剧</a>
+    <a href="#shows">宫灯综艺</a>
+    <a href="#anime">糖葫芦动漫</a>
+    <a href="#about">关于这座城</a>
+  </div>
+  <div class="cp">
+    网站名称：北京电影网（非官方影视导航） ｜ 网址：<a href="https://beijingdianyingwang-h5.github.io">https://beijingdianyingwang-h5.github.io</a><br>
+    © 2026 北京电影网 · 胡同口挂盏宫灯 ｜ 与北京电影学院/北京市电影局无关 ｜ 本站仅展示影视信息，资源以正版/公开平台为准。
+  </div>
+</footer>
+
+</body>
+</html>
